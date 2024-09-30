@@ -7,12 +7,144 @@
     <title>Projetos AnthonyODore</title>
     <link rel="icon" href="favicon.png">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
         body{
-            background-color:azure
+            background-color:azure;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            
+        }
+        header{
+            display: block;
+            text-align: center;
+            justify-content: center;
+            /* background-color: antiquewhite; */
+            padding: 10px;
+            height: 70px;
+        }
+        #bg-foto{
+            width: 50%;
+            position: relative;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            z-index: -1 ;
+        }
+        #logo{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-top: 20px;
+            z-index: 2 ;
+            position: relative;
+            top: -60px;
+        }
+        #nome{
+            margin-top: -40px;
+            font-size: 16pt;
+        }
+        p{
+            width: 50vw;
+            text-align: justify;
+            margin: 40px 0 70px 50%;
+            transform: translateX(-50%);
+            font-size: 12pt;
+        }
+        #tudo{
+            display: flex;
+            /* background-color: darkgoldenrod; */
+            width: 55%;
+            margin: 40px 0 0 50%;
+            transform: translateX(-50%);
+            
+        }
+        .progresso{
+            background-color: rgb(2, 70, 7);
+            /* width: 50%; */
+            height: 20px;
+            border-radius: 10px;
+            display: block;
+            /* margin-left: 50px; */
+        }
+        ul{
+            text-align: center;
+            /* background-color: aqua; */
+            display: block;
+            width: 100%;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 14pt;
+            margin-top: 30px;
+            /* background-color: blueviolet;  */
+        }
+        .logo_ling{
+            width: 25px;
+            margin: 20px;
+        }
+        #sql{
+            width: 50px;
+            margin-right: 20px;
+            margin-left: -1px;
         }
     </style>
 </head>
 <body>
-    <h1>Hello Word</h1>
-    <p>oi</p>
+    <header>
+        <img src="wallpaper Anthony Albert 31 07 22.png" id="bg-foto">
+        <img src="foto.jpg" id="logo" alt="logo"><!--minha foto ou logo-->
+        <h4 id="nome">Anthony Albert</h4><!--nome-->
+        <p>Programador FullStack Paraibano de 18 anos, curso Engenharia de Software</p>
+
+        <div id="tudo">
+            <ul>
+                <h3>Linguagens Dominantes</h3>
+                <li>
+                    <img src="html5.png" class="logo_ling a" style="margin: 0 18px 0 20px;""> 
+                    HTML
+                    <div id="prog_html" class="progresso" style="margin: 0 0 0 80px; background-color: darkgreen;"></div>
+                <li>
+                    <img src="css.png" class="logo_ling b">
+                    CSS
+                    <div id="prog_css" class="progresso" style="margin: 0 0 0 90px;"></div>
+                </li>
+                <li>
+                    <img src="JavaScript.png" class="logo_ling c">
+                    JavaScript
+                    <div id="prog_javascript" class="progresso" style="margin: 0 0 0 40px;background-color: darkgoldenrod;"></div>
+                </li>
+                <li>
+                    <img src="Sql.png" id="sql" class="logo_ling d">
+                    SQL
+                    <div id="prog_sql" class="progresso" style="margin: 0 0 0 86px;background-color: rgb(226, 9, 9);"></div>
+                </li>
+                <li>
+                    <img src="Python.png" class="logo_ling e">
+                    Python
+                    <div id="prog_python" class="progresso" style="margin: 0 0 0 70px;background-color: rgb(255, 143, 15);"></div>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
+    <!---->
+    <script>
+        var progresso_html = document.getElementsByClassName("progresso")[0]
+        var progresso_css = document.getElementsByClassName("progresso")[1]
+        var progresso_javascript = document.getElementsByClassName("progresso")[2]
+        var progresso_sql = document.getElementsByClassName("progresso")[3]
+        var progresso_python = document.getElementsByClassName("progresso")[4]
+
+        progresso_html.style.width = "70%"
+        progresso_css.style.width = "60%"
+        progresso_javascript.style.width = "30%"
+        progresso_sql.style.width = "10%"
+        progresso_python.style.width = "20%"
+        
+    </script>
 </body> 
